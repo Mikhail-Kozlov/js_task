@@ -5,9 +5,11 @@ console.log('Let\'s go');
 const MIN_DISK_COU = 1;
 const MAX_DISK_COU = 10;
 
+// =============== put task params here =============== //
 var diskCou = 6;
 var curPositions = 821906;
 var secretPositions = 797083;
+// =============== put task params here =============== //
 
 if (diskCou < MIN_DISK_COU || diskCou > MAX_DISK_COU)
 	throw new Error('Количество дисков должно быть от ' + MIN_DISK_COU + ' до ' + MAX_DISK_COU);
