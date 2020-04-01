@@ -5,8 +5,8 @@ console.log('Let\'s go');
 const CAR_CAPACITY = 4;
 
 // =============== put task params here =============== //
-var groupsCount = 12;
-var groupsQty = "4 1 4 2 1 2 3 1 3 1 3 1";
+var groupsCount = 8;
+var groupsQty = "2 3 4 4 1 2 3 1";
 // =============== put task params here =============== //
 
 var groupsQtyArr = groupsQty.split(" ")
@@ -15,7 +15,7 @@ if (groupsQtyArr.length < groupsCount)
 	throw new Error('Количество данных о группах рабочих меньше ' + groupsCount);
 
 if (groupsQtyArr.length > groupsCount)
-	console.warn('Данных о группах больше, чем заявленное количество групп: ' + groupsQtyArr.length + ' vs ' + groupsCount + ". Будут использованы первые " + groupsCount + "позиций");
+	console.warn('Данных о группах больше, чем заявленное количество групп: ' + groupsQtyArr.length + ' vs ' + groupsCount + ". Будут использованы первые " + groupsCount + " позиций");
 
 groupsQtyArr = groupsQtyArr.slice(0, groupsCount)
 
